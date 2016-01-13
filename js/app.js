@@ -59,7 +59,7 @@ var Player = function() {
         bottomWall: true
     };
     this.sprite = 'images/char-boy.png';
-}
+};
 Player.prototype.update = function(dt) {
 
 };
@@ -70,7 +70,7 @@ Player.prototype.resetPlayerPosition = function() {
     this.x = playerInitialX;
     this.y = playerInitialY;
     this.resetCheckPosition();
-}
+};
 Player.prototype.handleInput = function(keyPressed) {
 
     var stepHorizontalLength = 100;
@@ -121,12 +121,12 @@ Player.prototype.checkPosition = function() {
 Player.prototype.resetCheckPosition = function() {
     this.setHorizontalWallCheckerState(false, false);
     this.wallChecker.bottomWall = true;
-}
+};
 
 Player.prototype.setHorizontalWallCheckerState = function(leftWallState, rightWallState) {
     this.wallChecker.leftWall = leftWallState;
     this.wallChecker.rightWall = rightWallState;
-}
+};
 
 
 // Now instantiate your objects.
